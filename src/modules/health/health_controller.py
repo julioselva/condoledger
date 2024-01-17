@@ -1,4 +1,3 @@
-"""Importing time to get the system uptime"""
 import time
 
 import psutil
@@ -8,11 +7,11 @@ from pydantic import BaseModel
 router = APIRouter()
 
 
-class HealthCheckResponse(BaseModel):
+class GetHealthCheckResponse(BaseModel):
     uptime: float
 
 
-@router.get("/health", response_model=HealthCheckResponse)
-def health_check():
+@router.get("/health", response_model=GetHealthCheckResponse)
+def get_health_check():
     """Return the API uptime"""
     return {"uptime": time.time() - psutil.boot_time()}

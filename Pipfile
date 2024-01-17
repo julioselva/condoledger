@@ -4,13 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "*"
 setuptools = "*"
 fastapi = "*"
 sqlalchemy = "*"
 uvicorn = {extras = ["standard"], version = "*"}
 psutil = "*"
 psycopg2-binary = "*"
+alembic = "*"
 
 [dev-packages]
 flake8 = "*"

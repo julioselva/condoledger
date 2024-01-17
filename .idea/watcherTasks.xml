@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTasksOptions">
+    <enabled-global>
+      <option value="python/isort" />
+      <option value="python/flake8" />
+    </enabled-global>
+  </component>
+</project>
